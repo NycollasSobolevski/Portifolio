@@ -455,8 +455,9 @@ body{
 }
 .Contato div{
     display: flex;
-    gap: 10px;
     /* justify-content: center; */
+    gap: 15px;
+    margin: 25px;
 }
 .Contato img{
     width: 20px;
