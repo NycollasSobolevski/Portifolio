@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /* BASE */
 body{
     
@@ -10,8 +12,30 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
-
+/* ::-webkit-scrollbar               */
+/* ::-webkit-scrollbar-button        */
+/* ::-webkit-scrollbar-track         */
+/* ::-webkit-scrollbar-track-piece   */
+/* ::-webkit-scrollbar-thumb         */
+/* ::-webkit-scrollbar-corner        */
+/* ::-webkit-resizer                 */
+::-webkit-scrollbar{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: #555;
+    border-radius: 15px;
+    transition: 2s;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(131,96,195,1) 0%, rgba(102,125,182,1) 50%, rgba(46,191,145,1) 100%);
+    transition: 2s;
+  }
 
 /* Barra Superior */
 /* .IndicatorBar{
